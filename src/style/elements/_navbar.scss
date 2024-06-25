@@ -14,6 +14,8 @@
   overflow: scroll;
   background-color: rgba($color: $black, $alpha: 0.95);
   @include lg {
+    overflow: hidden;
+
     height: 120px;
     background-color: transparent;
     left: 50%;
@@ -30,10 +32,8 @@
     justify-content: space-around;
     row-gap: 20px;
     margin-inline: auto;
-    overflow-y: scroll;
     @include lg {
       height: 100%;
-
       border-bottom: 1px solid #fff;
       top: 0;
 
