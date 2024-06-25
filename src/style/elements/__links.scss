@@ -1,0 +1,37 @@
+.links {
+  &__header {
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 35px;
+  }
+  &__list {
+    display: inline-block;
+    &--row {
+      display: flex;
+      gap: 8px;
+    }
+  }
+  &__item {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  &__link {
+    font-size: 13px;
+    color: $gray-100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 999;
+    position: relative;
+    img {
+      &:hover {
+        filter: $yellow-filter;
+      }
+    }
+    &:hover {
+      color: $yellow;
+    }
+  }
+}

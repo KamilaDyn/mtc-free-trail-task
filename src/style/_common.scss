@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  font-family: 'Open Sans', 'sans-serif';
+  color: $gray;
+}
+main {
+  width: 100vw;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  width: 100%;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+.item--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.lazy {
+  transition: all 0.3s linear;
+}
+
+.navbar.sticky {
+  @include lg {
+    background-color: rgba($color: $black, $alpha: 0.6);
+  }
+}

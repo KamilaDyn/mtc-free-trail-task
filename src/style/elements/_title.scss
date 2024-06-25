@@ -1,0 +1,28 @@
+.title {
+  font-size: 35px;
+  line-height: 38px;
+  color: $black;
+  font-weight: 500;
+  @include md {
+    font-size: 45px;
+    line-height: 48px;
+  }
+  @include lg {
+    font-size: 52px;
+    line-height: 55px;
+  }
+  &--center {
+    text-align: center;
+  }
+  &--white {
+    color: #fff;
+  }
+  &--small {
+    font-size: 25px;
+    line-height: 30px;
+    @include md {
+      font-size: 33px;
+      line-height: 42px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.subheader {
+  font-size: 16px;
+  color: $yellow;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+  font-size: 14px;
+  @include xl {
+    font-size: 16px;
+  }
+  &--white {
+    color: white;
+  }
+  &--center {
+    text-align: center;
+  }
+}

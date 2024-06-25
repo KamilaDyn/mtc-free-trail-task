@@ -1,0 +1,85 @@
+.testimonials {
+  background-color: $gray-100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 120px;
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+    @include md {
+      font-size: 33px;
+      line-height: 42px;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    max-width: 600px;
+    text-align: center;
+    padding-inline: 30px;
+  }
+  &__text {
+    color: $gray;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-block: 24px;
+    @include md {
+      font-size: 18px;
+    }
+  }
+  &__author {
+    margin-top: 14px;
+  }
+  &__arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+    @include md {
+      width: 80%;
+    }
+    @include xl {
+      width: 60%;
+    }
+  }
+  &__arrow {
+    position: relative;
+    border: none;
+    color: $yellow;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    @include md {
+      width: initial;
+      height: initial;
+    }
+    img {
+      max-height: 100%;
+      @include md {
+        max-height: initial;
+      }
+    }
+  }
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    a {
+      padding-inline: 15px;
+      @include md {
+        padding-inline: 30px;
+      }
+    }
+  }
+}

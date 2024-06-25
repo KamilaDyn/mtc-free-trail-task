@@ -1,0 +1,63 @@
+.hero {
+  width: 100vw;
+  position: relative;
+  @include xl {
+    height: 100vh;
+  }
+  &__track {
+    width: 100%;
+    height: 100%;
+  }
+  &__slide {
+    position: relative;
+  }
+  &__image {
+    img {
+      display: block;
+      object-fit: cover;
+      max-width: initial;
+    }
+  }
+
+  &__track {
+    position: relative;
+    z-index: 999;
+  }
+  &__bullets {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+  }
+  &__bullet {
+    width: 50px;
+    height: 5px;
+    border: none;
+    border-radius: 2.5px;
+    margin-inline: 2.5px;
+    background-color: #fff;
+    cursor: pointer;
+    &--active {
+      background-color: $yellow;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+    max-width: 677px;
+    margin-inline: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    padding-inline: 15px;
+    @include xl {
+      height: calc(100vh - 120px);
+    }
+  }
+}

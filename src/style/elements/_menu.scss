@@ -1,0 +1,33 @@
+.menu {
+  &__item {
+    &:nth-child(3) {
+      order: -1;
+      @include lg {
+        order: initial;
+      }
+    }
+    &:last-child {
+      border: 1px solid #fff;
+      transition: all 0.3s ease-in-out;
+      width: 190px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 25px;
+      cursor: pointer;
+
+      .navbar__link {
+        padding-inline: 20px;
+        padding-block: 10px;
+
+        &:hover {
+          color: white;
+          filter: $yellow-filter;
+        }
+      }
+      &:hover {
+        border-color: $yellow;
+      }
+    }
+  }
+}
