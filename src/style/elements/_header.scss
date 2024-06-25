@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
+  height: 100vh;
+  max-height: 550px;
+  @include lg {
+    max-height: initial;
+  }
   &__mobile-menu {
     position: absolute;
     top: 0;
