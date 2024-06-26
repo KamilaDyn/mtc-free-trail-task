@@ -9,14 +9,15 @@
   }
   &__mobile-menu {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 15px;
     display: flex;
-    z-index: 1000;
+    z-index: 1001;
     justify-content: flex-end;
     margin-top: 15px;
     @include lg {
-      margin-top: 0;
+      top: 0;
+      right: 0;
     }
   }
 }
