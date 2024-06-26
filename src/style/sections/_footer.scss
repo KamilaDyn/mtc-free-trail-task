@@ -1,15 +1,14 @@
 .footer {
-  padding-block: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-inline: 20px;
+  padding: 20px 40px;
   position: relative;
   background-color: rgba($color: $black, $alpha: 1);
 
   @include xl {
-    padding-inline: 0;
+    padding: 20px 0;
   }
   &__mask {
     position: absolute;
@@ -40,11 +39,10 @@
   }
   &__copyright {
     max-width: 380px;
-    margin-inline: auto;
     font-size: 13px;
     line-height: 20px;
     text-align: center;
-    margin-block: 50px;
+    margin: 50px auto;
   }
   &__navigation {
     display: grid;
@@ -52,8 +50,7 @@
     row-gap: 25px;
     column-gap: 50px;
     justify-content: center;
-    margin-top: 40px;
-    margin-inline: auto;
+    margin: 40px auto 0 auto;
 
     @include sm {
       max-width: 70%;

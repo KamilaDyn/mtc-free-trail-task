@@ -3,7 +3,8 @@
   border: none;
   color: #fff;
   font-size: 18px;
-  padding-inline: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   line-height: 40px;
   border-radius: 30px;
   margin-top: 30px;
@@ -13,7 +14,8 @@
   cursor: pointer;
   @include xl {
     line-height: 60px;
-    padding-inline: 60px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
   &:hover {
     background-color: $yellow-200;

@@ -20,7 +20,12 @@ module.exports = {
       },
       {
         test: /\.(s(a|c)ss)$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.m?js$/,
@@ -45,7 +50,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'styles/[name].css', // Set the name for the extracted CSS file
     }),
-    ,
     new HtmlWebpackPlugin({
       hash: true,
       template: 'src/index.html',
