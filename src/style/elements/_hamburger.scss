@@ -10,10 +10,6 @@
   border: none;
   z-index: 1002;
 
-  &:hover {
-    animation-play-state: paused;
-  }
-
   @include lg {
     display: none;
   }

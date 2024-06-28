@@ -45,9 +45,6 @@
     margin-right: 2.5px;
     background-color: #fff;
     cursor: pointer;
-    &--active {
-      background-color: $yellow;
-    }
   }
   &__content {
     display: flex;
@@ -67,6 +64,13 @@
     padding-right: 15px;
     @include xl {
       height: calc(100vh - 120px);
+    }
+  }
+}
+.hero.glide {
+  .glide__bullet {
+    &--active {
+      background-color: $yellow;
     }
   }
 }
